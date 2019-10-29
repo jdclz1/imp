@@ -40,7 +40,8 @@ class project
 //        $result = $ora->table('pjaauc_t')->where($where)->select();
 //        return var_dump($result);
 //        以下为模拟的方式
-        $result = PjaaucModel::find()->visible(['PJAAUC001','PJAAUC002']);
+//        $result = PjaaucModel::find()->visible(['PJAAUC001','PJAAUC002']);
+        $result = PjaaucModel::find();
 //        $result = ProductModel::getProductDetail(2);
 //        return var_dump($result);
         return $result;

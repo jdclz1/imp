@@ -12,8 +12,8 @@ namespace app\api\controller\v1;
 class Test
 {
     public function test(){
-//        echo 'aa';
-//        echo 'bb';
+       echo 'aa';
+       echo 'bb';
 //        echo 'cc';
 //        echo JSON_UNESCAPED_UNICODE;
     }

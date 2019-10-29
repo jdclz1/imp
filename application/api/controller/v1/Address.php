@@ -10,6 +10,7 @@ namespace app\api\controller\v1;
 
 
 use app\api\controller\BaseController;
+use app\api\model\UserAddress;
 use app\api\validate\AddressNew;
 use app\api\service\Token as TokenServices;
 use app\api\model\User as UserModel;
@@ -42,6 +43,19 @@ class Address extends BaseController
 //            throw new TokenException();
 //        }
 //    }
+
+//add 20191028 新增获取地址接口
+public function getUserAddress(){
+    $uid = TokenServices::getCurrentUid();
+    $userAddress = UserAddress::where('user_id', $uid)->find();
+    if(!$userAddress){
+        throw new UserException([
+            'msg' => '用户地址不存在',
+            'errorCode' => 6001
+        ]);
+    }
+    return $userAddress;
+}
 
 //    POSTMAN ?????????
 // ??????z.cn/api/v1/address    ?????post;

@@ -17,5 +17,6 @@ class Pjaauc_t extends t100Model
 //    protected $table = 'pjaauc_t';
 //
 //    protected $visible = [];
-    protected $hidden = ['pjaauc002','pjaauc003'];
+//    protected $hidden = ['pjaauc002','pjaauc003'];
+    protected $hidden = ['PJAAUC002','PJAAUC003'];
 }

@@ -7,8 +7,8 @@
  */
 
 return [
-//  'img_prefix' => 'http://z.cn/images',
+  'img_prefix' => 'http://z.cn/images',
 
-  'img_prefix' => 'https://benl.cn:8089/images',
+//  'img_prefix' => 'https://benl.cn:8089/images',
     'token_expire_in' => 7200
 ];

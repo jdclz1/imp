@@ -12,7 +12,7 @@ namespace app\lib\exception;
 class WeChatException extends BaseException
 {
     public $code = 404;
-//    public $msg = 'Î¢ĞÅ·şÎñÆ÷½Ó¿Úµ÷ÓÃÊ§°Ü';
+//    public $msg = 'å¾®ä¿¡æœåŠ¡å™¨æ¥å£è°ƒç”¨å¤±è´¥';
     public $msg = 'English:Using WeChat service is fail';
     public $errorCode = 999;
 }
